@@ -7,15 +7,29 @@ import {
   FaLinkedinIn,
   FaGithub,
   FaXTwitter,
+  FaLaptopCode,
 } from 'react-icons/fa6';
 
 import { SiLeetcode } from 'react-icons/si';
+import { AiFillHome } from 'react-icons/ai';
+import { BsPersonWorkspace } from 'react-icons/bs';
+import { MdWork } from 'react-icons/md';
 
 export const menus = [
-  { id: nanoid(), text: 'home', href: '#home' },
-  { id: nanoid(), text: 'experience', href: '#experience' },
-  { id: nanoid(), text: 'skills', href: '#skills' },
-  { id: nanoid(), text: 'projects', href: '#projects' },
+  { id: nanoid(), text: 'Home', icon: <AiFillHome />, href: '#home' },
+  {
+    id: nanoid(),
+    text: 'experience',
+    icon: <MdWork />,
+    href: '#experience',
+  },
+  {
+    id: nanoid(),
+    text: 'skills',
+    icon: <BsPersonWorkspace />,
+    href: '#skills',
+  },
+  { id: nanoid(), text: 'projects', icon: <FaLaptopCode />, href: '#projects' },
 ];
 
 export const skills = [
@@ -51,23 +65,48 @@ export const skills = [
 export const socials = [
   {
     id: nanoid(),
-    icon: <FaLinkedinIn className="font-bold text-xl" />,
+    icon: <FaLinkedinIn className="font-bold h-6 w-6" />,
     url: 'https://www.linkedin.com/in/mainlycricket',
   },
   {
     id: nanoid(),
-    icon: <FaGithub className="font-bold text-xl" />,
+    icon: <FaGithub className="font-bold h-6 w-6" />,
     url: 'https://github.com/mainlycricket',
   },
   {
     id: nanoid(),
-    icon: <SiLeetcode className="font-bold text-xl" />,
+    icon: <SiLeetcode className="font-bold h-6 w-6" />,
     url: 'https://leetcode.com/mainlycoding',
   },
   {
     id: nanoid(),
-    icon: <FaXTwitter className="font-bold text-xl" />,
+    icon: <FaXTwitter className="font-bold h-6 w-6" />,
     url: 'https://twitter.com/mainlycricket',
+  },
+];
+
+export const experiences = [
+  {
+    id: nanoid(),
+    title: 'NodeJS Backend Intern',
+    company: 'Aantariksh Developers',
+    duration: 'Oct 2022 - Dec 2022',
+    info: [
+      'Developed REST APIs using ExpressJS & MongoDB.',
+      'Consumed third-party APIs for OAuth and to fetch user data.',
+      'Worked with Firebase Web Client (JavaScript): RealTime Database & Authentication.',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: 'Cricket Writer & Analyst',
+    company: 'The Quint, Cricket.com, CricXtasy',
+    duration: 'Mar 2019 - Sep 2022',
+    info: [
+      'Verified Journalist on MuckRack.',
+      'Stats-based articles conveying analysis: previews, game-plans, post-match analysis, opinions & features.',
+      'Contributed to the social media presence of CricXtasy & Stat Doctor, particularly during the IPL & CPL.',
+    ],
   },
 ];
 

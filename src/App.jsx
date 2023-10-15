@@ -1,9 +1,10 @@
-import { Hero, Navbar, Skills } from "./components";
+import { Hero, Navbar, Skills, Experience } from "./components";
 
 const App = () => {
   return <>
   <Navbar />
   <Hero />
+  <Experience />
   <Skills />
   </>;
 };

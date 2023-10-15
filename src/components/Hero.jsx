@@ -5,8 +5,8 @@ import { socials } from '../data';
 
 const Hero = () => {
   return (
-    <section className="p-12 bg-emerald-100" id="home">
-      <article className="flex flex-wrap justify-between">
+    <section className="p-4  lg:p-12 bg-emerald-100" id="home">
+      <article className="flex overflow-hidden justify-between">
         {/* INFO */}
         <div className="flex flex-col ml-12 mt-12 gap-y-4">
           <div className="flex">
@@ -34,7 +34,8 @@ const Hero = () => {
               Cricket Enthusiast
             </p>
           </div>
-          <div className='flex gap-x-4 mt-4'>
+          {/* SOCIALS */}
+          <div className='flex justify-center gap-x-8 sm:justify-start mt-4'>
             {socials.map((social) => {
               const { id, icon, url } = social;
               return (
