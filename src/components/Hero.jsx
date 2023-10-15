@@ -17,7 +17,7 @@ const Hero = () => {
             <h3 className="mb-4 text-4xl font-bold">
               I'm <span className="text-emerald-600">Tushar</span>
             </h3>
-            <p className="mt-4">
+            <p className="mt-12 sm:mt-4">
               <VscTerminal className="inline-block font-bold mr-2" />
               Computer Science Student
             </p>
@@ -35,7 +35,7 @@ const Hero = () => {
             </p>
           </div>
           {/* SOCIALS */}
-          <div className='flex justify-center gap-x-8 sm:justify-start mt-4'>
+          <div className='flex justify-center gap-x-8 sm:justify-start mt-12 sm:mt-4'>
             {socials.map((social) => {
               const { id, icon, url } = social;
               return (

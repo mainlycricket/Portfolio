@@ -110,4 +110,23 @@ export const experiences = [
   },
 ];
 
-export const projects = [];
+export const projects = [
+  {
+    id: nanoid(),
+    title: 'Application Approval System',
+    info: [
+      'REST API that handled the flow of an application from the bottom of the hierarchy to the top for apporval/rejection/forwarding.',
+    ],
+    techStack: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    link: 'https://documenter.getpostman.com/view/20410939/2s8Z6zzXDp',
+  },
+  {
+    id: nanoid(),
+    title: 'Real-Time Chat Application',
+    info: [
+      "Full-stack web-application that enabled real-time chat between buyer and seller under admin's supervision.",
+    ],
+    techStack: ['JavaScript', 'NodeJS', 'ExpressJs', 'SocketIo', 'MongoDB'],
+    link: null,
+  },
+];

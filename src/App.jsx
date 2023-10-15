@@ -1,4 +1,4 @@
-import { Hero, Navbar, Skills, Experience } from "./components";
+import { Hero, Navbar, Skills, Experience, Projects } from "./components";
 
 const App = () => {
   return <>
@@ -6,6 +6,7 @@ const App = () => {
   <Hero />
   <Experience />
   <Skills />
+  <Projects />
   </>;
 };
 export default App;

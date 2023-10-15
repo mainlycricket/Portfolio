@@ -3,14 +3,14 @@ import { experiences } from '../data';
 
 const Experience = () => {
   return (
-    <section id="experience" className="p-8">
+    <section id="experience" className="bg-slate-100 p-8">
       <h3 className='text-center text-3xl font-medium'>Work Experience</h3>
 
-      <div className="my-12 flex flex-row flex-wrap gap-8 items-center justify-center">
+      <div className="my-12 flex flex-row flex-wrap gap-12 items-center justify-center md:gap-x-24">
         {experiences.map((experience) => {
           const { id, title, company, duration, info } = experience;
           return (
-            <div key={id} className="card w-96 px-4 py-8 bg-base-100 shadow">
+            <div key={id} className="card w-96 px-4 py-8 bg-base-100 border border-slate-500 shadow">
               <h3 className="text-center text-xl font-medium tracking-wider">
                 {title}
               </h3>

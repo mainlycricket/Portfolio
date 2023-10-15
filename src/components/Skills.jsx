@@ -2,7 +2,7 @@ import { skills } from '../data';
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" className="bg-slate-100 p-8">
       <h3 className="text-center text-3xl font-medium">Skills</h3>
       <div className="my-12 flex flex-row flex-wrap gap-8 items-center justify-center">
         {skills.map((skill) => {
