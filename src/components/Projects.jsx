@@ -4,7 +4,14 @@ import { projects } from '../data';
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-emerald-100 p-8">
+    <section
+      id="projects"
+      className="p-8"
+      style={{
+        background:
+          'linear-gradient(to bottom, rgba(209,250,229,1) 2%, #89cf9e 90%, #5bd5778c 100%)',
+      }}
+    >
       <h3 className="text-center text-black text-3xl font-medium">Projects</h3>
 
       <div className="my-12 flex flex-row flex-wrap gap-12 items-center justify-center md:gap-x-24">

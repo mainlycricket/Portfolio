@@ -2,7 +2,14 @@ import { skills } from '../data';
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-slate-100 p-8">
+    <section
+      id="skills"
+      className="p-8"
+      style={{
+        background:
+          'linear-gradient(to bottom, #5bd5778c 5%, #68bb81bc 80%, rgba(209,250,229,1) 100%)',
+      }}
+    >
       <h3 className="text-center text-3xl text-black font-medium">Skills</h3>
       <div className="my-12 flex flex-row flex-wrap gap-8 items-center justify-center">
         {skills.map((skill) => {

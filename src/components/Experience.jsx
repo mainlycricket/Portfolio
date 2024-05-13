@@ -4,7 +4,14 @@ import { FiExternalLink } from 'react-icons/fi';
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-slate-100 p-8">
+    <section
+      id="experience"
+      className="p-8"
+      style={{
+        background:
+          'linear-gradient(to bottom, rgba(209,250,229,1) 2%, #7abe8e 85%, #5bd5778c 100%)',
+      }}
+    >
       <h3 className="text-center text-black text-3xl font-medium">
         Work Experience
       </h3>
