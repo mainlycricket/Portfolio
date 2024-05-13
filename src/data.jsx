@@ -58,7 +58,7 @@ export const skills = [
     id: nanoid(),
     icon: <FaPython className="h-16 w-16 text-emerald-500" />,
     title: 'Python',
-    info: 'Solid understanding of Core Python concepts for problem solving.',
+    info: 'Solid understanding of Core Python concepts for problem solving (primary language on Leetcode).',
   },
 ];
 
@@ -67,21 +67,25 @@ export const socials = [
     id: nanoid(),
     icon: <FaLinkedinIn className="font-bold h-6 w-6" />,
     url: 'https://www.linkedin.com/in/mainlycricket',
+    text: 'LinkedIn',
   },
   {
     id: nanoid(),
     icon: <FaGithub className="font-bold h-6 w-6" />,
     url: 'https://github.com/mainlycricket',
+    text: 'GitHub',
   },
   {
     id: nanoid(),
     icon: <SiLeetcode className="font-bold h-6 w-6" />,
     url: 'https://leetcode.com/mainlycoding',
+    text: 'LeetCode',
   },
   {
     id: nanoid(),
     icon: <FaXTwitter className="font-bold h-6 w-6" />,
-    url: 'https://twitter.com/mainlycricket',
+    url: 'https://twitter.com/mainlycoding',
+    text: 'Twitter',
   },
 ];
 
@@ -96,6 +100,7 @@ export const experiences = [
       'Consumed third-party APIs for OAuth and to fetch user data.',
       'Worked with Firebase Web Client (JavaScript): RealTime Database & Authentication.',
     ],
+    link: 'https://drive.google.com/file/d/1ERS_mIULV3_C-CepGl50e55ZoBujgVvF/view?usp=sharing',
   },
   {
     id: nanoid(),
@@ -107,26 +112,57 @@ export const experiences = [
       'Stats-based articles conveying analysis: previews, game-plans, post-match analysis, opinions & features.',
       'Contributed to the social media presence of CricXtasy & Stat Doctor, particularly during the IPL & CPL.',
     ],
+    link: 'https://muckrack.com/mainlycricket',
   },
 ];
 
 export const projects = [
   {
     id: nanoid(),
-    title: 'Application Approval System',
+    title: 'Placement Potral',
     info: [
-      'REST API that handled the flow of an application from the bottom of the hierarchy to the top for apporval/rejection/forwarding.',
+      'A placement portal for colleges that allows a super admin to manage companies and students.',
+      'Company admin can post job openings, view job applications & student profiles and shortlist/hire/select candidates',
+      'Students can manage their profiles and apply for available job openings and track application status.',
     ],
-    techStack: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB'],
-    link: 'https://documenter.getpostman.com/view/20410939/2s8Z6zzXDp',
+    techStack: [
+      'JavaScript',
+      'NodeJS',
+      'ExpressJs',
+      'MongoDB',
+      'TailwindCSS',
+      'ReactJS',
+    ],
+    link: 'https://placement-portal-react.netlify.app/',
   },
   {
     id: nanoid(),
     title: 'Real-Time Chat Application',
     info: [
-      "Full-stack web-application that enabled real-time chat between buyer and seller under admin's supervision.",
+      "Full-stack web-application that enabled real-time chat between buyer and seller under a super admin's supervision.",
+      'Buyers can create new chat rooms to chat with sellers.',
+      'Facility to exchange text messages as well images.',
+      'Built for a freelance client.',
     ],
-    techStack: ['JavaScript', 'NodeJS', 'ExpressJs', 'SocketIo', 'MongoDB'],
-    link: null,
+    techStack: [
+      'JavaScript',
+      'NodeJS',
+      'ExpressJs',
+      'SocketIo',
+      'MongoDB',
+      'Bootstrap',
+    ],
+    link: 'https://drive.google.com/file/d/1ukGpwnO1JeRZp3FNvoGsDC6sxOfxq2bU/view?usp=sharing',
+  },
+  {
+    id: nanoid(),
+    title: 'Application Approval System',
+    info: [
+      'REST API that handled the flow of an application from the bottom of the hierarchy to the top for apporval/rejection/forwarding.',
+      'Designed for colleges with relevant user roles: admin, principal, HoDs, class mentors and students.',
+      'Ensured data confidentiality and privacy between different departments and classes of the same department.',
+    ],
+    techStack: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    link: 'https://documenter.getpostman.com/view/20410939/2s8Z6zzXDp',
   },
 ];

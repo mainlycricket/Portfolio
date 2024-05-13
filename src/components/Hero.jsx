@@ -5,7 +5,7 @@ import { socials } from '../data';
 
 const Hero = () => {
   return (
-    <section className="p-4  lg:p-12 bg-emerald-100" id="home">
+    <section className="p-4 text-black lg:p-12 bg-emerald-100" id="home">
       <article className="flex overflow-hidden justify-between">
         {/* INFO */}
         <div className="flex flex-col ml-12 mt-12 gap-y-4">
@@ -35,14 +35,16 @@ const Hero = () => {
             </p>
           </div>
           {/* SOCIALS */}
-          <div className='flex justify-center gap-x-8 sm:justify-start mt-12 sm:mt-4'>
+          <div className="flex justify-center gap-x-8 sm:justify-start mt-12 sm:mt-4">
             {socials.map((social) => {
-              const { id, icon, url } = social;
+              const { id, icon, url, text } = social;
               return (
                 <div key={id}>
-                  <a href={url} target="_blank">
-                    {icon}
-                  </a>
+                  <div className="tooltip tooltip-top md:tooltip-bottom" data-tip={text}>
+                    <a href={url} target="_blank">
+                      {icon}
+                    </a>
+                  </div>
                 </div>
               );
             })}

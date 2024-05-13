@@ -7,7 +7,7 @@ const Navbar = () => {
         {menus.map((menu) => {
           const { id, text, href, icon } = menu;
           return (
-            <li key={id} className="capitalize sm:text-xl">
+            <li key={id} className="capitalize text-black sm:text-xl">
               <a href={href}>{text}</a>
             </li>
           );
