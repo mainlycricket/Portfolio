@@ -133,7 +133,7 @@ export const projects = [
       'TailwindCSS',
       'ReactJS',
     ],
-    link: 'https://placement-portal-react.netlify.app/',
+    link: 'https://github.com/placementportal/placement-portal-react#readme',
   },
   {
     id: nanoid(),
