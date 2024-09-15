@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaXTwitter,
   FaLaptopCode,
+  FaGolang,
 } from 'react-icons/fa6';
 
 import { SiLeetcode } from 'react-icons/si';
@@ -60,6 +61,13 @@ export const skills = [
     title: 'Python',
     info: 'Solid understanding of Core Python concepts for problem solving (primary language on Leetcode).',
   },
+
+  {
+    id: nanoid(),
+    icon: <FaGolang className="h-16 w-16 text-emerald-500" />,
+    title: 'Go',
+    info: 'Core Go programming along with its special features like goroutines and channels. Familiarity with REST API development',
+  },
 ];
 
 export const socials = [
@@ -92,6 +100,18 @@ export const socials = [
 export const experiences = [
   {
     id: nanoid(),
+    title: 'Fullstack Development Intern',
+    company: 'Aantariksh Developers',
+    duration: 'June 2024 - July 2024',
+    info: [
+      'Created a dashboard for managing invoice documents, presenting reports with interactive charts',
+      'Developed REST API endpoints using Flask to integrate third-party APIs and MongoDB',
+      'Worked on multiple existing Firebase-based projects to fix bugs and add new features',
+    ],
+    link: 'https://drive.google.com/file/d/1xkAtAWHqOKR8RzC_mUx1HVXOBcOBk_Os/view',
+  },
+  {
+    id: nanoid(),
     title: 'NodeJS Backend Intern',
     company: 'Aantariksh Developers',
     duration: 'Oct 2022 - Dec 2022',
@@ -117,6 +137,17 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    id: nanoid(),
+    title: 'CSV App',
+    info: [
+      'Generates a single .sql file and a standalone REST API server based on the provided CSV files',
+      'Supports various constraints like Primary Key, Foreign Key, Unique, Default, Min, Max, Enums etc',
+      'Configurable API: role & organization-based auth, data filtering, pagination, foreign key look-up etc.',
+    ],
+    techStack: ['Go', 'PostgreSQL'],
+    link: 'https://github.com/mainlycricket/CSV_App',
+  },
   {
     id: nanoid(),
     title: 'Placement Potral',

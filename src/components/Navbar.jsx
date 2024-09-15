@@ -2,12 +2,15 @@ import { menus } from '../data';
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-emerald-100 justify-around sm:justify-center">
+    <div className="navbar justify-around bg-black sm:justify-center">
       <ul className="menu menu-horizontal px-1">
         {menus.map((menu) => {
           const { id, text, href, icon } = menu;
           return (
-            <li key={id} className="capitalize text-black sm:text-xl">
+            <li
+              key={id}
+              className="capitalize sm:text-xl hover:underline hover:bg-transparent rounded-lg"
+            >
               <a href={href}>{text}</a>
             </li>
           );

@@ -5,7 +5,11 @@ import { socials } from '../data';
 
 const Hero = () => {
   return (
-    <section className="p-4 text-black lg:p-12 bg-emerald-100" id="home">
+    <section className="p-4 text-black lg:p-12" id="home"
+    style={{
+      background:
+        'linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%)',
+    }}>
       <article className="flex overflow-hidden justify-between">
         {/* INFO */}
         <div className="flex flex-col ml-12 mt-12 gap-y-4">
@@ -15,7 +19,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col gap-y-2 text-lg">
             <h3 className="mb-4 text-4xl font-bold">
-              I'm <span className="text-emerald-600">Tushar</span>
+              I'm <span className="italic">Tushar</span>
             </h3>
             <p className="mt-12 sm:mt-4">
               <VscTerminal className="inline-block font-bold mr-2" />

@@ -8,12 +8,11 @@ const Experience = () => {
       id="experience"
       className="p-8"
       style={{
-        background:
-          'linear-gradient(to bottom, rgba(209,250,229,1) 2%, #7abe8e 85%, #5bd5778c 100%)',
+        backgroundImage: `linear-gradient(to bottom, #09203f 0%, #4d6e87 100%)`,
       }}
     >
-      <h3 className="text-center text-black text-3xl font-medium">
-        Work Experience
+      <h3 className="text-center text-white text-3xl tracking-wider font-medium">
+        WORK EXPERIENCE
       </h3>
 
       <div className="my-12 flex flex-row flex-wrap gap-12 items-center justify-center md:gap-x-24">
@@ -22,7 +21,7 @@ const Experience = () => {
           return (
             <div
               key={id}
-              className="card w-96 px-4 py-8 bg-base-100 border border-slate-500 shadow cursor-pointer hover:scale-105 transition-transform"
+              className="card w-96 px-4 py-8 bg-slate-800 border text-white border-slate-500 shadow cursor-pointer hover:scale-105 transition-transform"
             >
               <h3 className="text-center text-xl font-medium tracking-wider">
                 {title}{' '}
